@@ -1,5 +1,6 @@
 #Creat by Mahdiomrani
 import time,socket,threading,random,json
+import pyfiglet
 from tqdm import tqdm
 from urllib import request
 from urllib import parse
@@ -9,7 +10,10 @@ import http
 from tqdm import tqdm
 
 try:
-    print("_" * 50)
+    Banner=pyfiglet.figlet_format('HTTP * DDOS',font='slant')
+    print("_" * 70)
+    print(Banner) 
+    print("_" * 70)
     print("You must see which protocol the sit is in(https or http) and write it down\nBecause https= port:443 And http= port:80\nInput url should look like: https://github.com/ or https://stackoverflow.com/")
     url=input("\n(AS stated above)Enter URL: ")
     Power=input("Power between 1 and 30 :")
